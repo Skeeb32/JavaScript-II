@@ -61,9 +61,7 @@ const runners = [
 // let  = 
 // fullNames = [];
 runners.forEach(function(items) {
-  return fullnames.push(`${items.first_name} ${items.first_name}`); {
-
-})
+  return fullnames.push(`${items.first_name} ${items.first_name}`); })
 console.log(fullNames);
 
 // ==== Challenge 2: Use .map() ====
@@ -75,6 +73,10 @@ console.log(firstNamesAllCaps);
 
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue. We need a filtered version of the runners array, containing only those runners with large sized shirts so they can choose a different size. This will be an array of objects.
+//Example from lecture:
+// let shirtOrder = [];
+// runners.forEach(runner => shirtOrder.push(`${runner.last_name} = ${runner.shirt_size}`))
+// console.log(shirtOrder);
 let runnersLargeSizeShirt = runners.filter(function(items) {
   return items.shirt_size === 'L';
 });
@@ -83,7 +85,7 @@ console.log(runnersLargeSizeShirt);
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations and save the total into a ticketPriceTotal variable.
 let ticketPriceTotal = 0;
-let donations runners.map(runners => runners.donation); 
+let donations = runners.map(runners => runners.donation); 
 ticketPriceTotal = donations.reduce((sum, donations) => sum + donations);
 console.log(ticketPriceTotal);
 
