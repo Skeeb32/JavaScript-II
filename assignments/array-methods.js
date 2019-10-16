@@ -58,10 +58,9 @@ const runners = [
 
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs. Combine both the first and last names and populate a new array called `fullNames`. This array will contain just strings.
-// let  = 
-// fullNames = [];
+let fullNames = [];
 runners.forEach(function(items) {
-  return fullnames.push(`${items.first_name} ${items.first_name}`); })
+  return fullNames.push(`${items.first_name} ${items.first_name}`); })
 console.log(fullNames);
 
 // ==== Challenge 2: Use .map() ====
@@ -100,9 +99,9 @@ const combined = donations
 console.log(combined);
 
 // Problem 2
-const testMap = runner.map(first_name => `${first_name.name}`);
+const testMap = runners.map(first_name => `${first_name.name}`);
 console.log(testMap);
 
 // Problem 3
-const shirtSize = shirt_size.filter(runner => runner.category === 'S');
+const shirtSize = runners.filter(runners => runners.category === 'S');
 console.log(shirtSize);
