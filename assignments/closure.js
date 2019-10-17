@@ -3,6 +3,24 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+function foood(foodName) {
+  const eat1 = 'Burgers';
+  const eat2 = 'Pizza';
+  console.log(`${foodName} is the tastiest food in the world`);
+  debugger;
+  function state(stateName) {
+    const sport = 'football'
+    console.log(`the most popular sport in ${stateName} is ${sport}`);
+    debugger;
+    function capital(cityName) {
+      const drink = 'milk'
+      console.log(`${cityName} is the capital of ${stateName} and the offical foods are ${eat1} and ${eat2} and the national drink is ${drink} the national sport is ${sport}`);
+      debugger;
+    }// this closes the capital
+    capital('Indianapolis');
+  }// this closes the province
+  state('Indiana')
+}// this closes the food 
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
